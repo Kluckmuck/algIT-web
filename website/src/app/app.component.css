@@ -1,0 +1,18 @@
+body {
+
+}
+
+header {
+  padding-top: 30rem;
+  background-image: url("../assets/header.jpg");
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+header h1 {
+  margin-bottom: 300px;
+  color: white;
+}
