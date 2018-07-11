@@ -1,12 +1,11 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { IconsModule } from './icons/icons.module';
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; //Bootstrap
 import { NgsRevealModule } from 'ng-scrollreveal'; //Scroll reveal
 import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to'; //Smooth scroll to
-
-
 
 @NgModule({
   declarations: [
@@ -16,9 +15,10 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to'; //Smooth scroll t
     BrowserModule,
     NgbModule.forRoot(),
     NgsRevealModule.forRoot(),
-    ScrollToModule.forRoot()
+    ScrollToModule.forRoot(),
+    IconsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

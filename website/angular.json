@@ -19,7 +19,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
+              "src/favicon.ico"
             ],
             "styles": [
               "src/styles.css",
@@ -29,7 +29,7 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "./node_modules/scrollreveal/dist/scrollreveal.js",
+              "./node_modules/scrollreveal/dist/scrollreveal.js"
             ]
           },
           "configurations": {
