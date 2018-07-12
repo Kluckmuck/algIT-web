@@ -52,6 +52,9 @@ section {
   color: black;
   transform: scale(1.5);
 }
+.bg-primary {
+  background-color: #F05F40 !important;
+}
 .btn {
   font-weight: 700;
   text-transform: uppercase;
@@ -77,7 +80,4 @@ section {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
-}
-.bg-primary {
-  background-color: #F05F40 !important;
 }
