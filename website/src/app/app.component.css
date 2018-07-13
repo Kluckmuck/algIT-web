@@ -52,6 +52,38 @@ section {
   color: black;
   transform: scale(1.5);
 }
+section#contact {
+  background-color: #212529;
+  background-image: url("../assets/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+section#contact .section-heading {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+section#contact .form-group {
+  margin-bottom: 25px;
+}
+
+section#contact .form-group input,
+section#contact .form-group textarea {
+  padding: 20px;
+}
+
+section#contact .form-group input.form-control {
+  height: auto;
+}
+
+section#contact .form-group textarea.form-control {
+  height: 248px;
+}
+
+section#contact .form-control:focus {
+  border-color: #fed136;
+  box-shadow: none;
+}
 .bg-primary {
   background-color: #F05F40 !important;
 }
