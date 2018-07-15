@@ -4,7 +4,6 @@ body,html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
-
 header {
   background-image: url("../assets/header.jpg");
   background-position: center center;
@@ -12,6 +11,7 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  min-height: 1000px;
 }
 
 header h1 {
@@ -36,7 +36,8 @@ p.lead {
 section {
   padding: 8rem 0;
 }
-
+div#arrowBtn {
+}
 .arrow-down {
   height: 100px;
   width: 100px;
@@ -47,6 +48,7 @@ section {
   transition-timing-function: ease-in-out;
   -webkit-transition: 400ms;
   -webkit-transition-timing-function: ease-in-out;
+  bottom: 0;
 }
 .arrow-down:hover {
   color: black;
