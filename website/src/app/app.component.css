@@ -51,7 +51,7 @@ div#arrowBtn {
   bottom: 0;
 }
 .arrow-down:hover {
-  color: black;
+  color: #F05F40;
   transform: scale(1.5);
 }
 section#contact {
@@ -105,11 +105,14 @@ section#contact .form-control:focus {
   background-color: #F05F40;
   border-color: #F05F40;
   margin-bottom: 30px;
+  -webkit-transition: transform 0.5s ease-in-out;
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
   color: #fff;
   background-color: #ee4b28 !important;
+  -webkit-transition: transform 0.5s ease-in-out;
+  transform: scale(1.1);
 }
 
 .btn-primary:active, .btn-primary:focus {
