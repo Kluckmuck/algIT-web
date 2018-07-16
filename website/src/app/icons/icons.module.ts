@@ -1,10 +1,13 @@
 import { NgModule } from '@angular/core';
-import { IconArrowDown } from 'angular-feather';
-
-//Feather icons module. Import icons here!
-
+import { IconArrowDown, IconMail, IconPhone, IconLinkedin } from 'angular-feather';
+//Feather icons module. Import icons above !
+//https://www.npmjs.com/package/angular-feather
+//Add imported icon to array
 const icons = [
-  IconArrowDown
+  IconArrowDown,
+  IconMail,
+  IconPhone,
+  IconLinkedin
 ];
 
 
