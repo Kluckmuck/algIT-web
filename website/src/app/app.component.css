@@ -32,7 +32,7 @@ header h1#gradient {
   font-size: 800%;
 }
 header p {
-  
+
 }
 hr {
     border: 0;
@@ -108,10 +108,9 @@ h2#team-header {
   height: 200px;
   border: 7px solid #fff;
 }
-ul.social-buttons li a {
+ul.social-buttons li {
   font-size: 20px;
   line-height: 40px;
-  display: block;
   width: 40px;
   height: 40px;
   color: black;
