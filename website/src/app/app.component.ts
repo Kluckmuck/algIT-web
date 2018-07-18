@@ -15,4 +15,7 @@ export class AppComponent {
 
     //other options here
   }
+  sendMessage() {
+    console.log("hej")
+  }
 }
