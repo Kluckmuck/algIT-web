@@ -3,12 +3,12 @@
     <div class="container my-auto">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h1 class="display-1" id="gradient">
+          <h1 class="display-1" id="gradient" [ngsReveal]="{ duration: 1500 }">
             Älg IT
           </h1>
           <hr>
         </div>
-        <div class="col-lg-8 mx-auto">
+        <div class="col-lg-8 mx-auto" [ngsReveal]="{ duration: 2500 }">
           <p class="text-faded mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eget tempus libero.
           Vestibulum consequat semper nisl vitae ultrices.
           Fusce sit amet vestibulum risus. Suspendisse potenti.</p>
@@ -22,7 +22,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-12 text-center">
-          <h2 class="section-heading display-1">At Your Service</h2>
+          <h2 class="section-heading display-1" [ngsReveal]="{ duration: 1000 }">At Your Service</h2>
           <hr class="my-4">
         </div>
       </div>
@@ -65,41 +65,26 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2 class="section-heading display-1" id="team-header">Vi är</h2>
+        <h2 class="section-heading display-1" id="team-header" [ngsReveal]="{ duration: 1000 }">Vi är</h2>
       </div>
     </div>
     <div class="row">
       <div class="col-md-6 text-center">
-        <div class="team-member">
+        <div class="team-member" [ngsReveal]="{ duration: 1000 }">
           <img class="rounded-circle" src="/assets/img/image2.jpeg" alt="">
           <h4 class="display-4">Max Jourdanis</h4>
-          <p class="text-muted">CEO | Developer</p>
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <i-phone placement="bottom" ngbTooltip="Tooltip on bottom"></i-phone>
-            </li>
-            <li class="list-inline-item">
-              <i-mail placement="bottom" ngbTooltip="Tooltip on bottom"></i-mail>
-            </li>
-          </ul>
+          <p class="text-muted"><u>CEO | Developer</u></p>
+          <p class="text-muted"><em>max@algit.se</em></p>
+          <p class="text-muted"><em>073-047 41 97</em></p>
         </div>
       </div>
       <div class="col-md-6 text-center">
-        <div class="team-member">
+        <div class="team-member" [ngsReveal]="{ duration: 1500 }">
           <img class="rounded-circle" src="/assets/img/viktor.jpg" alt="">
           <h4 class="display-4">Viktor Lundberg</h4>
-          <p class="text-muted">CEO | Developer</p>
-          <ul class="list-inline social-buttons">
-            <li class="list-inline-item">
-              <a href="#"><i-phone></i-phone></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"><i-linkedin></i-linkedin></a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#"><i-mail></i-mail></a>
-            </li>
-          </ul>
+          <p class="text-muted"><u>CEO | Developer</u></p>
+          <p class="text-muted"><em>viktor@algit.se</em></p>
+          <p class="text-muted"><em>070-656 68 05</em></p>
         </div>
       </div>
     </div>
