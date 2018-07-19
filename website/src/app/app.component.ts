@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NgsRevealConfig } from 'ng-scrollreveal';
 
+import { Message } from  './message';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -15,7 +17,7 @@ export class AppComponent {
   }
   // form variables
   submitted = false;
-  
+
   onSubmit() { this.submitted = true; }
 
   sendMessage() {
