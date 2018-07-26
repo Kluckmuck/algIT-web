@@ -15,29 +15,19 @@ header {
   min-height: 1000px;
 }
 
-header h1#gradient {
+header h1 {
   margin-top: 150px;
   padding-bottom: 20px;
-  background: -moz-radial-gradient(center, ellipse cover, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,0,1) 75%, rgba(255,0,0,1) 100%); /* ff3.6+ */
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,0,0,1)), color-stop(25%, rgba(255,255,0,1)), color-stop(50%, rgba(5,193,255,1)), color-stop(75%, rgba(255,255,0,1)), color-stop(100%, rgba(255,0,0,1))); /* safari4+,chrome */
-  background:-webkit-radial-gradient(center, ellipse cover, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,0,1) 75%, rgba(255,0,0,1) 100%); /* safari5.1+,chrome10+ */
-  background: -o-radial-gradient(center, ellipse cover, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,0,1) 75%, rgba(255,0,0,1) 100%); /* opera 11.10+ */
-  background: -ms-radial-gradient(center, ellipse cover, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,0,1) 75%, rgba(255,0,0,1) 100%); /* ie10+ */
-  background:radial-gradient(ellipse at center, rgba(255,0,0,1) 0%, rgba(255,255,0,1) 25%, rgba(5,193,255,1) 50%, rgba(255,255,0,1) 75%, rgba(255,0,0,1) 100%); /* w3c */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#ff0000',GradientType=1 ); /* ie6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#000000',GradientType=1 ); /* ie6-9 */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#ffffff',GradientType=1 ); /* ie6-9 */  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0000', endColorstr='#ff0000',GradientType=1 ); /* ie6-9 */  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#800000', endColorstr='#FFD817',GradientType=1 ); /* ie6-9 */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: 800%;
 }
-header p {
 
+header h1:hover {
+  color: #707070;
 }
+
 hr {
     border: 0;
     height: 0; /* Firefox... */
-    box-shadow: 0 0 10px 1px white;
+    box-shadow: 0 0 10px 1px #707070;
 }
 hr:after {  /* Not really supposed to work, but does */
     content: "\00a0";  /* Prevent margin collapse */
@@ -46,16 +36,17 @@ p.lead {
   color:white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
 section {
   padding: 8rem 0;
 }
-div#arrowBtn {
+section.kontakt {
+  padding: 2rem 0;
+  bottom: 0;
 }
-.arrow-down {
-  height: 100px;
-  width: 100px;
-  margin-bottom: 50px;
+.icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 10px;
   margin-top:50px;
   /* Hover color fade in/out */
   transition: background 0.5s, transform 0.5s ease-out, fill 0.5s, 400ms;
@@ -64,46 +55,10 @@ div#arrowBtn {
   -webkit-transition-timing-function: ease-in-out;
   bottom: 0;
 }
-.arrow-down:hover {
-  color: #F05F40;
-  transform: scale(1.5);
+.icon:hover {
+  color: #707070;
+  transform: scale(1);
 }
-section#contact {
-  background-color: #212529;
-  background-image: url("../assets/map-image.png");
-  background-repeat: no-repeat;
-  background-position: center;
-}
-section#contact .section-heading {
-  color: #fff;
-  margin-bottom: 20px;
-}
-
-section#contact .form-group {
-  margin-bottom: 25px;
-}
-
-section#contact .form-group input,
-section#contact .form-group textarea {
-  padding: 20px;
-}
-
-section#contact .form-group input.form-control {
-  height: auto;
-}
-
-section#contact .form-group textarea.form-control {
-  height: 248px;
-}
-
-section#contact .form-control:focus {
-  border-color: #fed136;
-  box-shadow: none;
-}
-h2#team-header {
-  margin-bottom: 50px;
-}
-
 .team-member img {
   width: 200px;
   height: 200px;
@@ -116,37 +71,4 @@ ul.social-buttons li {
   height: 40px;
   color: black;
   border-radius: 100%;
-}
-
-.bg-primary {
-  background-color: #F05F40 !important;
-}
-.btn {
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
-}
-
-.btn-xl {
-  padding: 1rem 2rem;
-}
-
-.btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
-  margin-bottom: 30px;
-  -webkit-transition: transform 0.5s ease-in-out;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  color: #fff;
-  background-color: #ee4b28 !important;
-  -webkit-transition: transform 0.5s ease-in-out;
-  transform: scale(1.1);
-}
-
-.btn-primary:active, .btn-primary:focus {
-  box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
