@@ -33,7 +33,7 @@
           <hr class="my-4">
         </div>
       </div>
-      <div class="row">
+      <div class="row service-items">
         <div class="col-6 col-md-4">
           <i-aperture class="icon"></i-aperture>
           <h2>Hemsida</h2>
@@ -70,35 +70,31 @@
 
   <!-- lag1 -->
   <section class="bg-light" id="team">
-    <div class="container">
+    <div class="container text-center">
       <div class="row">
-        <div class="col-lg-12 text-center" [ngsReveal]="{ duration: 1000 }">
-          <h2 class="section-heading display-1" id="team-header">Vi är</h2>
-          <hr class="my-4">
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-6 col-md-4 text-center">
-          <div class="team-member" [ngsReveal]="{ duration: 1000 }">
-            <img class="rounded-circle" src="/assets/img/image2.jpeg" alt="">
-            <h4 class="display-4">Max</h4>
-            <p class="text-muted"><u>CEO | Developer</u></p>
-            <p class="text-muted"><em>max@algit.se</em></p>
-            <p class="text-muted"><em>073-047 41 97</em></p>
+        <div class="col-md-6">
+          <div class="flex-column">
+            <div class="col-md-6">
+              <div class="team-member" [ngsReveal]="{ duration: 1000 }">
+                <img class="rounded-circle" src="/assets/img/image2.jpeg" alt="">
+                <h4 class="display-4">Max</h4>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="team-member" [ngsReveal]="{ duration: 1500 }">
+                <img class="rounded-circle" src="/assets/img/viktor.jpg" alt="">
+                <h4 class="display-4">Viktor</h4>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col-6 col-md-4 text-center">
-          <div class="team-member" [ngsReveal]="{ duration: 1500 }">
-            <img class="rounded-circle" src="/assets/img/viktor.jpg" alt="">
-            <h4 class="display-4">Viktor</h4>
-            <p class="text-muted"><u>CEO | Developer</u></p>
-            <p class="text-muted"><em>viktor@algit.se</em></p>
-            <p class="text-muted"><em>070-656 68 05</em></p>
-          </div>
+        <div class="col-md-6">
+          <h1 class="display-1">Historia</h1>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- kontakt -->
   <section class="kontakt">

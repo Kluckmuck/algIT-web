@@ -36,6 +36,9 @@ p.lead {
   color:white;
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
+.service-items {
+  align-items: baseline;
+}
 section {
   padding: 8rem 0;
 }
@@ -63,6 +66,7 @@ section.kontakt {
   width: 200px;
   height: 200px;
   border: 7px solid #fff;
+  margin-top: 40px;
 }
 ul.social-buttons li {
   font-size: 20px;
