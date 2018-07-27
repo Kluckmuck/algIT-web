@@ -20,10 +20,6 @@ header h1 {
   padding-bottom: 20px;
 }
 
-header h1:hover {
-  color: #707070;
-}
-
 hr {
     border: 0;
     height: 0; /* Firefox... */
@@ -67,6 +63,18 @@ section.kontakt {
   height: 200px;
   border: 7px solid #fff;
   margin-top: 40px;
+}
+img.rounded-circle:hover ~ h4.member-title {
+  color: #707070;
+}
+h4.member-title {
+  transition: color 1s ease;
+}
+.historia {
+  border-style: dashed;
+  border-width: 0px;
+  border-color: black;
+  box-shadow: 0px 30px 40px rgba(0,0,0,.1);
 }
 ul.social-buttons li {
   font-size: 20px;

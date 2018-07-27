@@ -70,26 +70,34 @@
 
   <!-- lag1 -->
   <section class="bg-light" id="team">
-    <div class="container text-center">
+    <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="flex-column">
+          <div class="flex-column text-center">
             <div class="col-md-6">
               <div class="team-member" [ngsReveal]="{ duration: 1000 }">
                 <img class="rounded-circle" src="/assets/img/image2.jpeg" alt="">
-                <h4 class="display-4">Max</h4>
+                <h4 class="display-4 member-title">Max</h4>
               </div>
             </div>
             <div class="col-md-6">
               <div class="team-member" [ngsReveal]="{ duration: 1500 }">
                 <img class="rounded-circle" src="/assets/img/viktor.jpg" alt="">
-                <h4 class="display-4">Viktor</h4>
+                <h4 class="display-4 member-title">Viktor</h4>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <h1 class="display-1">Historia</h1>
+        <div class="col-md-6 historia">
+          <h1 class="display-1 text-center">Historia</h1>
+          <div class="itemset" [ngsRevealSet]="{ duration: 2000}" [ngsInterval]="500" [ngsSelector]="'p'">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</p>
+            <p>Aenean enim metus, semper et dapibus cursus, volutpat non ligula. Integer quis gravida orci.</p>
+            <p>Aenean lobortis elit vitae posuere bibendum. Maecenas tincidunt, nisl sit amet consequat lobortis, odio purus tristique ex, et posuere est justo quis ante.</p>
+            <p>Pellentesque ac justo et quam vestibulum porttitor. Cras suscipit diam metus, nec interdum nibh imperdiet non. Morbi a dolor lorem.</p>
+            <p>Duis vehicula et enim ut condimentum. Aenean consequat tincidunt tempor.</p>
+            <p>Vivamus ultricies nunc nec fermentum sodales. Ut odio urna, tincidunt sed tincidunt non, luctus eget ipsum. Curabitur posuere mattis odio nec convallis. Etiam est lacus, consectetur in fermentum ac, rhoncus sit amet augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+          </div>
         </div>
       </div>
     </div>
