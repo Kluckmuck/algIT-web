@@ -3,19 +3,19 @@
     <div class="container my-auto">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <h1 class="display-1 text-uppercase" [ngsReveal]="{ duration: 1500 }">
+          <h1 class="display-1 text-uppercase" [ngsReveal]="{ duration: 2500 }">
             Göteborgs nya byrå för webutveckling och design
           </h1>
           <hr>
         </div>
       </div>
       <div class="row">
-        <div class="col" [ngsReveal]="{ duration: 2500 }">
+        <div class="col" [ngsReveal]="{ duration: 3500 }">
           <a [ngx-scroll-to]="'#services'"><i-arrow-down class="icon"></i-arrow-down>
             <p class="lead">Våra tjänster</p>
           </a>
         </div>
-        <div class="col" [ngsReveal]="{ duration: 2500 }">
+        <div class="col" [ngsReveal]="{ duration: 3500 }">
           <a><i-message-circle class="icon"></i-message-circle>
             <p class="lead">Kontakta oss</p>
           </a>
@@ -33,33 +33,33 @@
           <hr class="my-4">
         </div>
       </div>
-      <div class="row service-items">
-        <div class="col-6 col-md-4">
+      <div class="row service-items" [ngsRevealSet]="{ duration: 2000}" [ngsInterval]="500" [ngsSelector]="'.item'">
+        <div class="col-6 col-md-4 item">
           <i-aperture class="icon"></i-aperture>
           <h2>Hemsida</h2>
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-6 col-md-4 item">
           <i-aperture class="icon"></i-aperture>
           <h2>Sökordsoptimering</h2>
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-6 col-md-4 item">
           <i-aperture class="icon"></i-aperture>
           <h2>Webbsystem</h2>
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-6 col-md-4 item">
           <i-aperture class="icon"></i-aperture>
           <h2>Support</h2>
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-6 col-md-4 item">
           <i-aperture class="icon"></i-aperture>
           <h2>Hemsida</h2>
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
         </div>
-        <div class="col-6 col-md-4">
+        <div class="col-6 col-md-4 item">
           <i-aperture class="icon"></i-aperture>
           <h2>Hemsida</h2>
           <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
@@ -90,13 +90,13 @@
         </div>
         <div class="col-md-6 historia">
           <h1 class="display-1 text-center">Historia</h1>
-          <div class="itemset" [ngsRevealSet]="{ duration: 2000}" [ngsInterval]="500" [ngsSelector]="'p'">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</p>
-            <p>Aenean enim metus, semper et dapibus cursus, volutpat non ligula. Integer quis gravida orci.</p>
-            <p>Aenean lobortis elit vitae posuere bibendum. Maecenas tincidunt, nisl sit amet consequat lobortis, odio purus tristique ex, et posuere est justo quis ante.</p>
-            <p>Pellentesque ac justo et quam vestibulum porttitor. Cras suscipit diam metus, nec interdum nibh imperdiet non. Morbi a dolor lorem.</p>
-            <p>Duis vehicula et enim ut condimentum. Aenean consequat tincidunt tempor.</p>
-            <p>Vivamus ultricies nunc nec fermentum sodales. Ut odio urna, tincidunt sed tincidunt non, luctus eget ipsum. Curabitur posuere mattis odio nec convallis. Etiam est lacus, consectetur in fermentum ac, rhoncus sit amet augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+          <div class="itemset" [ngsRevealSet]="{ duration: 2000}" [ngsInterval]="500" [ngsSelector]="'p.historia-item'">
+            <p class="historia-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</p>
+            <p class="historia-item">Aenean enim metus, semper et dapibus cursus, volutpat non ligula. Integer quis gravida orci.</p>
+            <p class="historia-item">Aenean lobortis elit vitae posuere bibendum. Maecenas tincidunt, nisl sit amet consequat lobortis, odio purus tristique ex, et posuere est justo quis ante.</p>
+            <p class="historia-item">Pellentesque ac justo et quam vestibulum porttitor. Cras suscipit diam metus, nec interdum nibh imperdiet non. Morbi a dolor lorem.</p>
+            <p class="historia-item">Duis vehicula et enim ut condimentum. Aenean consequat tincidunt tempor.</p>
+            <p class="historia-item">Vivamus ultricies nunc nec fermentum sodales. Ut odio urna, tincidunt sed tincidunt non, luctus eget ipsum. Curabitur posuere mattis odio nec convallis. Etiam est lacus, consectetur in fermentum ac, rhoncus sit amet augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
           </div>
         </div>
       </div>

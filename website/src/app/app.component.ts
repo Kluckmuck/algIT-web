@@ -12,7 +12,7 @@ export class AppComponent {
     // customize default values of ng-scrollreveal directives used by this component tree
     config.duration = 1000;
     config.easing = 'cubic-bezier(0.645, 0.045, 0.355, 1)';
-    config.reset = true;
+    config.reset = false;
   }
   // form variables
   submitted = false;
