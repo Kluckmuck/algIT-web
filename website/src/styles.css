@@ -1,5 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 @font-face {
   font-family: Kenyan;
-  src: url('/assets/fonts/kenyan_coffee.ttf'); 
+  src: url('/assets/fonts/kenyan_coffee_rg.ttf');
+}
+@font-face {
+  font-family: Kenyan-italic;
+  src: url('/assets/fonts/kenyan_coffee.ttf');
  }
+  @font-face {
+    font-family: Kenyan-bold;
+    src: url('/assets/fonts/kenyan_coffee_bd.ttf');
+   }

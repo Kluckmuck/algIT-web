@@ -23,6 +23,7 @@ header h1 {
 }
 .title {
 text-shadow: 10px 10px 0px #008368;
+font-family: 'Kenyan-italic', sans-serif;
 }
 
 h1.title:hover {
@@ -53,7 +54,9 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.5;
+}
+.service-title {
+  font-family: 'Kenyan-bold', sans-serif;
 }
 #team {
   background-position: center center;
