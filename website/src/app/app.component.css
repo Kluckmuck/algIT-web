@@ -22,6 +22,7 @@ header h1 {
 .title {
 text-shadow: 10px 10px 0px #008368;
 }
+
 h1.title:hover {
   text-shadow: 10px 10px 0px #cdb805;
 }
@@ -78,6 +79,12 @@ section.kontakt {
 .icon:hover {
   color: #707070;
   transform: scale(1);
+}
+.service-icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 10px;
+  margin-top:50px;
 }
 .team-member img {
   width: 200px;

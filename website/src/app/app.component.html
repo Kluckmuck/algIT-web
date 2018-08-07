@@ -2,7 +2,7 @@
   <header class="text-center text-white d-flex">
     <div class="container my-auto">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-10 mx-auto col-sm-12">
           <h1 class="display-1 text-uppercase title" [ngsReveal]="{ duration: 2500 }">
             Göteborgs nya byrå för webutveckling och design
           </h1>
@@ -29,40 +29,30 @@
     <div class="container text-center text-white">
       <div class="row">
         <div class="col-lg-10 mx-auto" [ngsReveal]="{ duration: 1000 }">
-          <h2 class="display-1">Våra tjänster</h2>
+          <h2 class="display-1 title">Våra tjänster</h2>
           <hr class="my-4">
         </div>
       </div>
       <div class="row service-items" [ngsRevealSet]="{ duration: 2000}" [ngsInterval]="500" [ngsSelector]="'.item'">
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
+        <div class="col-6 item">
+          <i-aperture class="service-icon"></i-aperture>
           <h2>Hemsida</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
+          <h4>Att utveckla och designa hemsidor, från mindre webbplatser till avancerade företagslösningar. Vi följer inga mallar, istället utvecklar vi produkter specifikt för kunden.</h4>
         </div>
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
-          <h2>Sökordsoptimering</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
-        </div>
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
+        <div class="col-6 item">
+          <i-aperture class="service-icon"></i-aperture>
           <h2>Webbsystem</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
+          <h4>Genom att digitalisera omoderna arbetssätt kan vi hjälpa er att arbeta lättare och effektivare.</h4>
         </div>
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
-          <h2>Support</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
+        <div class="col-6 item">
+          <i-aperture class="service-icon"></i-aperture>
+          <h2>Sökordoptimering</h2>
+          <h4>Genom optimering kan man öka antalet besökare till eran webbplats och se till att konkurrenter inte når potentiella kunder först.</h4>
         </div>
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
-          <h2>Hemsida</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
-        </div>
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
-          <h2>Hemsida</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
+        <div class="col-6 item">
+          <i-aperture class="service-icon"></i-aperture>
+          <h2>Design</h2>
+          <h4>Tack vare att designers alltid är nära till hand kan vi erbjuda unikt material, som logotyper, animationer och bilder.</h4>
         </div>
       </div>
     </div>
