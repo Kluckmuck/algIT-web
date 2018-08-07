@@ -29,6 +29,9 @@ font-family: 'Kenyan-italic', sans-serif;
 h1.title:hover {
   text-shadow: 10px 10px 0px #cdb805;
 }
+#service-header:hover {
+  text-shadow: 10px 10px 0px #960912;
+}
 hr {
     border: 0;
     height: 0; /* Firefox... */
