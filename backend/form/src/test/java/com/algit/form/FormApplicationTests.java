@@ -13,4 +13,11 @@ public class FormApplicationTests {
 	public void contextLoads() {
 	}
 
+
+	//TODO: write test for post
+	@Test
+	public void testPost(){
+		System.out.println("Testing post");
+	}
+
 }
