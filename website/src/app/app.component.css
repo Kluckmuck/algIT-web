@@ -100,6 +100,10 @@ section.kontakt {
   border: 7px solid #fff;
   margin-top: 40px;
 }
+.team-title {
+  font-family: 'Kenyan-bold', sans-serif;
+}
+
 img.rounded-circle:hover ~ h4.member-title {
   color: #707070;
 }
