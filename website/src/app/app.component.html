@@ -2,9 +2,9 @@
   <header class="text-center text-white d-flex">
     <div class="container my-auto">
       <div class="row">
-        <div class="col-lg-10 mx-auto">
+        <div class="col-lg-10 mx-auto col-sm-12">
           <h1 class="display-1 text-uppercase title" [ngsReveal]="{ duration: 2500 }">
-            Göteborgs nya byrå för webutveckling och design
+            Göteborgs nya byrå för webbutveckling och design
           </h1>
           <hr>
         </div>
@@ -16,7 +16,7 @@
           </a>
         </div>
         <div class="col" [ngsReveal]="{ duration: 3500 }">
-          <a><i-message-circle class="icon"></i-message-circle>
+          <a><i-message-circle class="icon" (click)="open(content)"></i-message-circle>
             <p class="lead">Kontakta oss</p>
           </a>
         </div>
@@ -29,40 +29,30 @@
     <div class="container text-center text-white">
       <div class="row">
         <div class="col-lg-10 mx-auto" [ngsReveal]="{ duration: 1000 }">
-          <h2 class="display-1">Våra tjänster</h2>
+          <h2 class="display-1 title" id="service-header">Våra tjänster</h2>
           <hr class="my-4">
         </div>
       </div>
       <div class="row service-items" [ngsRevealSet]="{ duration: 2000}" [ngsInterval]="500" [ngsSelector]="'.item'">
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
-          <h2>Hemsida</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
+        <div class="col-6 item">
+          <i-aperture class="service-icon"></i-aperture>
+          <h1 class="service-title">Hemsida</h1>
+          <h3>Att utveckla och designa hemsidor, från mindre webbplatser till avancerade företagslösningar. Vi följer inga mallar, istället utvecklar vi produkter specifikt för er.</h3>
         </div>
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
-          <h2>Sökordsoptimering</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
+        <div class="col-6 item">
+          <i-aperture class="service-icon"></i-aperture>
+          <h1 class="service-title">Webbsystem</h1>
+          <h3>Genom att digitalisera omoderna arbetssätt kan vi hjälpa er att arbeta lättare och effektivare.</h3>
         </div>
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
-          <h2>Webbsystem</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
+        <div class="col-6 item">
+          <i-aperture class="service-icon"></i-aperture>
+          <h1 class="service-title">Sökordsoptimering</h1>
+          <h3>Genom optimering kan man öka antalet besökare till eran webbplats och se till att konkurrenter inte når potentiella kunder först.</h3>
         </div>
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
-          <h2>Support</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
-        </div>
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
-          <h2>Hemsida</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
-        </div>
-        <div class="col-6 col-md-4 item">
-          <i-aperture class="icon"></i-aperture>
-          <h2>Hemsida</h2>
-          <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</h4>
+        <div class="col-6 item">
+          <i-aperture class="service-icon"></i-aperture>
+          <h1 class="service-title">Design</h1>
+          <h3>Tack vare att designers alltid är nära till hand kan vi erbjuda unikt material, som logotyper, animationer och bilder.</h3>
         </div>
       </div>
     </div>
@@ -114,4 +104,32 @@
       </div>
     </div>
   </section>
+
+  <!-- modal -->
+  <ng-template #content let-c="close" let-d="dismiss" [ngsReveal]="{ duration: 1500 }">
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label for="dateOfBirth">Date of birth</label>
+          <div class="input-group">
+            <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" (click)="dp.toggle()" type="button">
+                <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
+              </button>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
+    </div>
+  </ng-template>
 </body>

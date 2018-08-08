@@ -12,6 +12,8 @@ header {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  background-color: #828282;
+  background-blend-mode: darken;
   min-height: 1000px;
 }
 
@@ -21,9 +23,14 @@ header h1 {
 }
 .title {
 text-shadow: 10px 10px 0px #008368;
+font-family: 'Kenyan-italic', sans-serif;
 }
+
 h1.title:hover {
   text-shadow: 10px 10px 0px #cdb805;
+}
+#service-header:hover {
+  text-shadow: 10px 10px 0px #960912;
 }
 hr {
     border: 0;
@@ -50,7 +57,9 @@ section {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  opacity: 0.5;
+}
+.service-title {
+  font-family: 'Kenyan-bold', sans-serif;
 }
 #team {
   background-position: center center;
@@ -78,6 +87,12 @@ section.kontakt {
 .icon:hover {
   color: #707070;
   transform: scale(1);
+}
+.service-icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 10px;
+  margin-top:50px;
 }
 .team-member img {
   width: 200px;
