@@ -3,7 +3,7 @@ package com.algit.form.controller;
 import com.algit.form.exception.ResourceNotFoundException;
 import com.algit.form.model.Answer;
 import com.algit.form.repository.AnswerRepository;
-import com.algit.form.repository.QuestionRepository;
+import com.algit.form.repository.ContactRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -17,29 +17,29 @@ public class AnswerController {
     private AnswerRepository answerRepository;
 
     @Autowired
-    private QuestionRepository questionRepository;
+    private ContactRepository contactRepository;
 
-    @GetMapping("/questions/{questionId}/answers")
-    public List<Answer> getAnswersByQuestionId(@PathVariable Long questionId) {
-        return answerRepository.findByQuestionId(questionId);
+    @GetMapping("/contact/{contactId}/answers")
+    public List<Answer> getAnswersByContactId(@PathVariable Long contactId) {
+        return answerRepository.findByContactId(contactId);
     }
 
-    @PostMapping("/questions/{questionId}/answers")
-    public Answer addAnswer(@PathVariable Long questionId,
-                            @Valid @RequestBody Answer answer) {
-        return questionRepository.findById(questionId)
-                .map(question -> {
-                    answer.setQuestion(question);
-                    return answerRepository.save(answer);
-                }).orElseThrow(() -> new ResourceNotFoundException("Question not found with id " + questionId));
-    }
+    // @PostMapping("/contact/{contactId}/answers")
+    // public Answer addAnswer(@PathVariable Long contactId,
+    //                         @Valid @RequestBody Answer answer) {
+    //     return contactRepository.findById(contactId)
+    //             .map(contact -> {
+    //                 answer.setContact(contact);
+    //                 return answerRepository.save(answer);
+    //             }).orElseThrow(() -> new ResourceNotFoundException("Conctact not found with id " + contactId));
+    // }
 
-    @PutMapping("/questions/{questionId}/answers/{answerId}")
-    public Answer updateAnswer(@PathVariable Long questionId,
+    @PutMapping("/contact/{contactId}/answers/{answerId}")
+    public Answer updateAnswer(@PathVariable Long contactId,
                                @PathVariable Long answerId,
                                @Valid @RequestBody Answer answerRequest) {
-        if(!questionRepository.existsById(questionId)) {
-            throw new ResourceNotFoundException("Question not found with id " + questionId);
+        if(!contactRepository.existsById(contactId)) {
+            throw new ResourceNotFoundException("Contact not found with id " + contactId);
         }
 
         return answerRepository.findById(answerId)
@@ -49,11 +49,11 @@ public class AnswerController {
                 }).orElseThrow(() -> new ResourceNotFoundException("Answer not found with id " + answerId));
     }
 
-    @DeleteMapping("/questions/{questionId}/answers/{answerId}")
-    public ResponseEntity<?> deleteAnswer(@PathVariable Long questionId,
+    @DeleteMapping("/contact/{contactId}/answers/{answerId}")
+    public ResponseEntity<?> deleteAnswer(@PathVariable Long contactId,
                                           @PathVariable Long answerId) {
-        if(!questionRepository.existsById(questionId)) {
-            throw new ResourceNotFoundException("Question not found with id " + questionId);
+        if(!contactRepository.existsById(contactId)) {
+            throw new ResourceNotFoundException("Contact not found with id " + contactId);
         }
 
         return answerRepository.findById(answerId)

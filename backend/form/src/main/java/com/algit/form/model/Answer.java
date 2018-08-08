@@ -25,7 +25,7 @@ public class Answer extends AuditModel {
     @JoinColumn(name = "question_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     @JsonIgnore
-    private Question question;
+    private Contact contact;
 
   public Long getId() {
     return this.id;
@@ -43,12 +43,12 @@ public class Answer extends AuditModel {
     this.text = text;
   }
 
-  public Question getQuestion() {
-    return this.question;
+  public Contact getContact() {
+    return this.contact;
   }
 
-  public void setQuestion(Question question) {
-    this.question = question;
+  public void setQuestion(Contact question) {
+    this.contact = question;
   }
 
     // Getters and Setters (Omitted for brevity)
