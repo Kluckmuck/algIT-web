@@ -4,132 +4,14 @@
       <div class="row">
         <div class="col-lg-10 mx-auto col-sm-12">
           <h1 class="display-1 text-uppercase title" [ngsReveal]="{ duration: 2500 }">
-            Göteborgs nya byrå för webbutveckling och design
+            Älg IT
           </h1>
           <hr>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col" [ngsReveal]="{ duration: 3500 }">
-          <a [ngx-scroll-to]="'#services'"><i-arrow-down class="icon"></i-arrow-down>
-            <p class="lead">Våra tjänster</p>
-          </a>
-        </div>
-        <div class="col" [ngsReveal]="{ duration: 3500 }">
-          <a><i-message-circle class="icon" (click)="open(content)"></i-message-circle>
-            <p class="lead">Kontakta oss</p>
-          </a>
+          <br />
+          <button type="button" class="btn btn-light btn-lg">Login</button>
         </div>
       </div>
     </div>
   </header>
-
-  <!-- tjänster -->
-  <section id="services">
-    <div class="container text-center text-white">
-      <div class="row">
-        <div class="col-lg-10 mx-auto" [ngsReveal]="{ duration: 1000 }">
-          <h2 class="display-1 title" id="service-header">Våra tjänster</h2>
-          <hr class="my-4">
-        </div>
-      </div>
-      <div class="row service-items" [ngsRevealSet]="{ duration: 2000}" [ngsInterval]="500" [ngsSelector]="'.item'">
-        <div class="col-6 item">
-          <i-aperture class="service-icon"></i-aperture>
-          <h1 class="service-title">Hemsida</h1>
-          <h3>Att utveckla och designa hemsidor, från mindre webbplatser till avancerade företagslösningar. Vi följer inga mallar, istället utvecklar vi produkter specifikt för er.</h3>
-        </div>
-        <div class="col-6 item">
-          <i-aperture class="service-icon"></i-aperture>
-          <h1 class="service-title">Webbsystem</h1>
-          <h3>Genom att digitalisera omoderna arbetssätt kan vi hjälpa er att arbeta lättare och effektivare.</h3>
-        </div>
-        <div class="col-6 item">
-          <i-aperture class="service-icon"></i-aperture>
-          <h1 class="service-title">Sökordsoptimering</h1>
-          <h3>Genom optimering kan man öka antalet besökare till eran webbplats och se till att konkurrenter inte når potentiella kunder först.</h3>
-        </div>
-        <div class="col-6 item">
-          <i-aperture class="service-icon"></i-aperture>
-          <h1 class="service-title">Design</h1>
-          <h3>Tack vare att designers alltid är nära till hand kan vi erbjuda unikt material, som logotyper, animationer och bilder.</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- lag1 -->
-  <section class="bg-light" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="flex-column text-center">
-            <div class="col-md-6">
-              <div class="team-member" [ngsReveal]="{ duration: 1000 }">
-                <img class="rounded-circle" src="/assets/img/image2.jpeg" alt="">
-                <h4 class="display-4 member-title">Max</h4>
-              </div>
-            </div>
-            <div class="col-md-6">
-              <div class="team-member" [ngsReveal]="{ duration: 1500 }">
-                <img class="rounded-circle" src="/assets/img/viktor.jpg" alt="">
-                <h4 class="display-4 member-title">Viktor</h4>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-6 historia">
-          <h2 class="display-1 text-center team-title">Historia</h2>
-          <div class="itemset" [ngsRevealSet]="{ duration: 2000}" [ngsInterval]="500" [ngsSelector]="'p.historia-item'">
-            <p class="historia-item">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In lacinia urna elit, bibendum blandit felis sollicitudin molestie</p>
-            <p class="historia-item">Aenean enim metus, semper et dapibus cursus, volutpat non ligula. Integer quis gravida orci.</p>
-            <p class="historia-item">Aenean lobortis elit vitae posuere bibendum. Maecenas tincidunt, nisl sit amet consequat lobortis, odio purus tristique ex, et posuere est justo quis ante.</p>
-            <p class="historia-item">Pellentesque ac justo et quam vestibulum porttitor. Cras suscipit diam metus, nec interdum nibh imperdiet non. Morbi a dolor lorem.</p>
-            <p class="historia-item">Duis vehicula et enim ut condimentum. Aenean consequat tincidunt tempor.</p>
-            <p class="historia-item">Vivamus ultricies nunc nec fermentum sodales. Ut odio urna, tincidunt sed tincidunt non, luctus eget ipsum. Curabitur posuere mattis odio nec convallis. Etiam est lacus, consectetur in fermentum ac, rhoncus sit amet augue. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- kontakt -->
-  <section class="kontakt">
-    <div class="container">
-      <div class="row align-items-end">
-        <div class="col-sm">
-          <h3 class="text-center">info@algit.se  -  0706566805  - Göteborg</h3>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- modal -->
-  <ng-template #content let-c="close" let-d="dismiss" [ngsReveal]="{ duration: 1500 }">
-    <div class="modal-header">
-      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
-      <button type="button" class="close" aria-label="Close" (click)="d('Cross click')">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <form>
-        <div class="form-group">
-          <label for="dateOfBirth">Date of birth</label>
-          <div class="input-group">
-            <input id="dateOfBirth" class="form-control" placeholder="yyyy-mm-dd" name="dp" ngbDatepicker #dp="ngbDatepicker">
-            <div class="input-group-append">
-              <button class="btn btn-outline-secondary" (click)="dp.toggle()" type="button">
-                <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/>
-              </button>
-            </div>
-          </div>
-        </div>
-      </form>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="c('Save click')">Save</button>
-    </div>
-  </ng-template>
+  <app-navbar></app-navbar>
 </body>

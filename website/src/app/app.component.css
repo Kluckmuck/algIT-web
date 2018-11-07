@@ -4,8 +4,6 @@ body,html {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   font-family: 'Kenyan', sans-serif;
-}
-header {
   background-image: url("../assets/header.jpg");
   background-position: center center;
   -webkit-background-size: cover;
@@ -22,15 +20,13 @@ header h1 {
   padding-bottom: 20px;
 }
 .title {
-text-shadow: 10px 10px 0px #008368;
-font-family: 'Kenyan-italic', sans-serif;
+  text-shadow: 10px 10px 0px #008368;
+  font-family: 'Kenyan-italic', sans-serif;
+  font-size: 250px;
 }
 
 h1.title:hover {
   text-shadow: 10px 10px 0px #cdb805;
-}
-#service-header:hover {
-  text-shadow: 10px 10px 0px #960912;
 }
 hr {
     border: 0;
@@ -50,77 +46,11 @@ p.lead {
 section {
   padding: 8rem 0;
 }
-#services {
-  background-image: url("https://images.pexels.com/photos/8892/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.btn-light, .btn-light:active, .btn-light:visited {
+    background-color: #008368 !important;
+    box-shadow: none;
+    border-color: none;
 }
-.service-title {
-  font-family: 'Kenyan-bold', sans-serif;
-}
-#team {
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-section.kontakt {
-  padding: 2rem 0;
-  bottom: 0;
-}
-.icon {
-  height: 80px;
-  width: 80px;
-  margin-bottom: 10px;
-  margin-top:50px;
-  /* Hover color fade in/out */
-  transition: background 0.5s, transform 0.5s ease-out, fill 0.5s, 400ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 400ms;
-  -webkit-transition-timing-function: ease-in-out;
-  bottom: 0;
-}
-.icon:hover {
-  color: #707070;
-  transform: scale(1);
-}
-.service-icon {
-  height: 80px;
-  width: 80px;
-  margin-bottom: 10px;
-  margin-top:50px;
-}
-.team-member img {
-  width: 200px;
-  height: 200px;
-  border: 7px solid #fff;
-  margin-top: 40px;
-}
-.team-title {
-  font-family: 'Kenyan-bold', sans-serif;
-}
-
-img.rounded-circle:hover ~ h4.member-title {
-  color: #707070;
-}
-h4.member-title {
-  transition: color 1s ease;
-}
-.historia {
-  border-style: dashed;
-  border-width: 0px;
-  border-color: black;
-  box-shadow: 0px 30px 40px rgba(0,0,0,.1);
-}
-ul.social-buttons li {
-  font-size: 20px;
-  line-height: 40px;
-  width: 40px;
-  height: 40px;
-  color: black;
-  border-radius: 100%;
+.btn-light:hover{
+  background-color: #cdb805 !important;
 }

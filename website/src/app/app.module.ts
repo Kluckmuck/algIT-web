@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { IconsModule } from './icons/icons.module';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap'; //Bootstrap
 import { NgsRevealModule } from 'ng-scrollreveal'; //Scroll reveal
-import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to'; //Smooth scroll to
+import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,

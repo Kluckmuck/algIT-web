@@ -1,0 +1,9 @@
+a {
+  font-family: 'Montserrat', sans-serif;
+}
+navbar{
+ background: inherit;
+ width: 250px;
+ height: 350px;
+ position: absolute;
+}
